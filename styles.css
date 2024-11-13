@@ -9,32 +9,49 @@ body {
 /* Navbar Styling */
 #navbar {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    top: -60px; /* Hidden by default */
     background-color: white;
-    transition: top 0.3s;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    transition: top 0.3s ease-in-out;
+}
+
+.navbar-hidden {
+    top: -60px; /* Hide navbar */
+}
+
+.navbar-visible {
+    top: 0; /* Show navbar */
 }
 
 .logo {
     height: 40px;
 }
 
-.user-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    border-right: 1px solid lightgrey; /* Thin border for desktop */
-}
-
+/* Hamburger Menu */
 .hamburger-menu {
     font-size: 24px;
-    color: green;
+    color: green; /* Green hamburger icon */
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; /* Ensure it is far-right */
+}
+
+/* User Icon */
+.user-icon {
+    font-size: 24px;
+    color: grey; /* Grey user profile icon */
+    margin-right: 15px;
+    border-right: 1px solid lightgrey; /* Separator for desktop */
+    padding-right: 15px;
 }
 
 /* Banner Styling */
@@ -42,7 +59,18 @@ body {
     height: 300px;
     background-color: grey; /* Placeholder for banner image */
     width: 100%;
-    margin-top: 80px;
+    margin: 0; /* Remove gaps between banners */
+}
+
+.first-banner {
+    margin-top: 0; /* Ensure the first banner is at the very top */
+}
+
+/* Main Content Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 main h1 {
@@ -60,7 +88,6 @@ main h1 {
     width: 100%;
     height: 100%;
     background-color: white;
-    padding: 20px;
     z-index: 1001;
 }
 
@@ -70,6 +97,7 @@ main h1 {
     right: 10px;
     cursor: pointer;
     color: red;
+    font-size: 24px;
 }
 
 #menu-overlay ul {
@@ -80,7 +108,7 @@ main h1 {
 }
 
 #menu-overlay ul li {
-    padding: 10px 0;
+    padding: 15px 0;
     border-bottom: 1px solid grey;
 }
 
@@ -96,26 +124,42 @@ main h1 {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .logo {
-        order: 1;
+    #navbar {
+        justify-content: space-between;
     }
+
+    .logo {
+        order: 1; /* Center the logo */
+    }
+
     .user-icon {
         order: 0;
     }
+
     .hamburger-menu {
         order: 2;
+        display: block; /* Ensure visibility */
     }
 }
 
 /* Desktop Styles */
 @media (min-width: 769px) {
-    .logo {
-        order: 0;
+    #navbar {
+        justify-content: space-between;
     }
+
+    .logo {
+        order: 0; /* Logo on far left */
+    }
+
     .user-icon {
         order: 1;
+        border-right: 1px solid lightgrey; /* Separator for desktop */
+        padding-right: 15px;
     }
+
     .hamburger-menu {
-        order: 2;
+        order: 2; /* Hamburger on far right */
+        display: block; /* Ensure visibility */
     }
 }
