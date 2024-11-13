@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Exams Plus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <img src="industryexams.png" alt="Industry Exams Logo" class="logo">
+        <img src="user-icon.png" alt="User Icon" class="user-icon">
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Hamburger Menu Overlay -->
+    <div id="menu-overlay">
+        <div class="close-btn" onclick="toggleMenu()">X</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Career Development Paths</a></li>
+            <li><a href="#">Security Practice Tests</a></li>
+            <li><a href="#">Healthcare Practice Tests</a></li>
+            <li><a href="#">Tech Practice Tests</a></li>
+            <li><a href="#">More Study Materials</a></li>
+        </ul>
+    </div>
+
+    <!-- Banners -->
+    <div class="banner"></div>
+    <div class="banner"></div>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Choose Your Industry</h1>
+    </main>
+
+    <script>
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            const navbar = document.getElementById("navbar");
+            let currentScroll = window.pageYOffset;
+            navbar.style.top = currentScroll > lastScrollTop ? "-60px" : "0";
+            lastScrollTop = currentScroll;
+        });
+
+        function toggleMenu() {
+            const menu = document.getElementById("menu-overlay");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
