@@ -91,7 +91,7 @@ main h1 {
     position: fixed;
     top: 0;
     right: 0; /* Pullout menu starts from the right */
-    width: 30%; /* Pullout menu width */
+    width: 50%; /* Pullout menu width */
     height: 100%; /* Full height */
     background-color: white;
     box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
