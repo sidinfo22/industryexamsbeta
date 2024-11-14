@@ -324,3 +324,19 @@ main h1 {
         width: 30%;
     }
 }
+
+  footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #333;
+  }
+,
