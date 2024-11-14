@@ -197,11 +197,13 @@ main h1 {
     #navbar {
         justify-content: space-between;
         margin-bottom: 0px;
+        height: 65px;
     }
 
     .logo {
         order: 1; /* Center the logo */
         margin: 0 auto; /* Center align it */
+         flex-grow: 1; /* Allow the logo to take up available space */
     }
     .banner {
         margin-top: 0px;
