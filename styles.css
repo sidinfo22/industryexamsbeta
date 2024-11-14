@@ -13,9 +13,7 @@ body {
 
 /* Navbar Styling */
 #navbar {
-    position: sticky; /* Sticky behavior */
-    top: 0; /* Stick to the top */
-    left: 0;
+    position: relative; /* Ensure navbar stays in natural document flow */
     width: 100%;
     background-color: white;
     display: flex;
@@ -23,7 +21,7 @@ body {
     align-items: center;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 1000; /* Ensure it is layered above other content if needed */
 }
 
 .navbar-hidden {
