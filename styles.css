@@ -73,17 +73,17 @@ body {
 
 /* Navbar Styling */
 #navbar {
-    position: relative; /* Ensure navbar stays in natural document flow */
-    width: 100%;
-    background-color: white;
     display: flex;
-    justify-content: space-between;
+    align-items: flex-end; /* Align items to the bottom */
+    justify-content: space-between; /* Space items evenly if needed */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
     align-items: center;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure it is layered above other content if needed */
+     width: 100%;
 }
-
 
 .logo {
     height: 40px;
