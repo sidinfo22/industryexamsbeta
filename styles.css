@@ -203,7 +203,6 @@ main h1 {
     .logo {
         order: 1; /* Center the logo */
         margin: 0 auto; /* Center align it */
-        width: calc(100% + 20%);
     }
     .banner {
         margin-top: 0px;
@@ -213,6 +212,7 @@ main h1 {
     .user-icon {
         order: 0;
         margin-left: 10px;
+        text-align:left
     }
 
     .hamburger-menu {
