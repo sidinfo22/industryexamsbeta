@@ -1,4 +1,4 @@
-x/* General Styling */
+/* General Styling */
 body {
     background-color: #e0ffe0; /* Subtle green background */
     margin: 0; /* Remove default margins */
@@ -166,7 +166,6 @@ main h1 {
     color: red;
     font-size: 24px;
     margin-bottom: 15px;
-    border: 1px solid lightgrey;
 }
 
 #menu-overlay ul {
