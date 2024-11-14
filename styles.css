@@ -242,6 +242,7 @@ main h1 {
         order: 1;
         border-right: 1px solid lightgrey; /* Separator for desktop */
         padding-right: 15px;
+        text-align: right;
     }
 
     .hamburger-menu {
