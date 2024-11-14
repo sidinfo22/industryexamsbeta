@@ -1,7 +1,7 @@
 /* General Styling */
 body {
     background-color: #e0ffe0; /* Subtle green background */
-    margin: 0;
+    margin: 0; /* Remove default margins */
     font-family: Arial, sans-serif;
     overflow-x: hidden; /* Prevent horizontal scrolling */
     box-sizing: border-box; /* Include padding and borders in width/height calculations */
@@ -58,20 +58,21 @@ body {
 
 /* Single Banner Styling */
 .banner {
-    width: 100vw; /* Spans the entire viewport width */
-    height: auto; /* Allow height to adjust based on image aspect ratio */
-    overflow: hidden; /* Prevent content overflow */
+    width: 100vw; /* Ensures the banner spans the full viewport width */
+    height: auto; /* Adjust height automatically */
     display: flex;
     justify-content: center; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically */
+    padding: 0; /* Ensure no extra padding around the banner */
+    margin: 0; /* Prevent any margin that could offset alignment */
+    overflow: hidden; /* Prevent any overflow */
 }
 
 .banner img {
-    width: 100%; /* Image scales to the full width of the banner */
-    height: auto; /* Maintain the image's aspect ratio */
-    object-fit: contain; /* Ensure the entire image is visible */
+    width: 100vw; /* Ensure the image spans the full viewport width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image visually fills the banner */
 }
-
 
 /* Main Content Container */
 .container {
@@ -118,8 +119,8 @@ main h1 {
 }
 
 #menu-overlay ul li {
-    padding: 15px 0;
-    border-bottom: 1px solid grey;
+    padding: 25px 0;
+
 }
 
 #menu-overlay ul li a {
