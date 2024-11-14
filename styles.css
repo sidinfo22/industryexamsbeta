@@ -83,6 +83,7 @@ body {
     border-bottom: 1px solid #ddd;
     align-items: center;
      width: 100%;
+    height: 50px;
 }
 
 .logo {
