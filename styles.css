@@ -194,6 +194,7 @@ main h1 {
 
     .logo {
         order: 1; /* Center the logo */
+        margin: 0 auto; /* Center align it */
     }
 
     .user-icon {
