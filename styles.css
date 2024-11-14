@@ -58,19 +58,20 @@ body {
 
 /* Single Banner Styling */
 .banner {
-    width: 100%; /* Spans the entire width of the page */
-    height: 300px; /* Set desired height */
-    overflow: hidden; /* Ensures no content spills out of the banner */
+    width: 100vw; /* Spans the entire viewport width */
+    height: auto; /* Allow height to adjust based on image aspect ratio */
+    overflow: hidden; /* Prevent content overflow */
     display: flex;
     justify-content: center; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically */
 }
 
 .banner img {
-    width: 100%; /* Image fills the full width */
-    height: 100%; /* Image fills the full height */
-    object-fit: cover; /* Ensures the image covers the banner area without distortion */
+    width: 100%; /* Image scales to the full width of the banner */
+    height: auto; /* Maintain the image's aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible */
 }
+
 
 /* Main Content Container */
 .container {
