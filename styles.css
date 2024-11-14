@@ -37,7 +37,7 @@ body {
 /* Adjust the size of the images */
 .industry-option img {
     width: 100%; /* Make images responsive */
-    height: auto;
+    height: 200px;
     border-bottom: 1px solid #ddd;
     border-radius: 15px; /* Rounded edges */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
