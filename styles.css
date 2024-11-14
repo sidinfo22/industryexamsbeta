@@ -84,13 +84,6 @@ body {
     z-index: 1000; /* Ensure it is layered above other content if needed */
 }
 
-.navbar-hidden {
-    top: -60px; /* Hide navbar */
-}
-
-.navbar-visible {
-    top: 0; /* Show navbar */
-}
 
 .logo {
     height: 40px;
