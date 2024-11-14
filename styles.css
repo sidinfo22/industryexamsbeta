@@ -203,7 +203,7 @@ main h1 {
     .logo {
         order: 1; /* Center the logo */
         margin: 0 auto; /* Center align it */
-         flex-grow: 1; /* Allow the logo to take up available space */
+        width: calc(100% + 20%);
     }
     .banner {
         margin-top: 0px;
