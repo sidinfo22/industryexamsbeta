@@ -1,4 +1,4 @@
-/* General Styling */
+x/* General Styling */
 body {
     background-color: #e0ffe0; /* Subtle green background */
     margin: 0; /* Remove default margins */
@@ -88,6 +88,7 @@ body {
 
 .logo {
     height: 40px;
+    
 }
 
 /* Hamburger Menu */
@@ -160,10 +161,12 @@ main h1 {
 .close-btn {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 15px;
     cursor: pointer;
     color: red;
     font-size: 24px;
+    margin-bottom: 15px;
+    border: 1px solid lightgrey;
 }
 
 #menu-overlay ul {
@@ -206,6 +209,7 @@ main h1 {
 
     .user-icon {
         order: 0;
+        margin-left: 10px;
     }
 
     .hamburger-menu {
