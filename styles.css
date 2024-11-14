@@ -58,9 +58,8 @@ body {
 
 /* Single Banner Styling */
 .banner {
-    width: 100vw; /* Ensures the banner spans the entire viewport width */
+    width: 100%; /* Spans the entire width of the page */
     height: 300px; /* Set desired height */
-    margin: 0; /* No margin to avoid spacing issues */
     overflow: hidden; /* Ensures no content spills out of the banner */
     display: flex;
     justify-content: center; /* Centers the content horizontally */
