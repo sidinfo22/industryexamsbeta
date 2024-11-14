@@ -119,6 +119,7 @@ body {
     padding: 0; /* Ensure no extra padding around the banner */
     margin: 0; /* Prevent any margin that could offset alignment */
     overflow: hidden; /* Prevent any overflow */
+    margin-top: 0px;
 }
 
 .banner img {
@@ -190,11 +191,16 @@ main h1 {
 @media (max-width: 768px) {
     #navbar {
         justify-content: space-between;
+        margin-bottom: 0px;
     }
 
     .logo {
         order: 1; /* Center the logo */
         margin: 0 auto; /* Center align it */
+    }
+    .banner {
+        margin-top: 0px;
+        height: calc(100% + 20%); /* Increase by 20% relative to its original size */
     }
 
     .user-icon {
